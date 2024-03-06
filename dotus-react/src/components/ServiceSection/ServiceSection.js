@@ -19,17 +19,11 @@ const ServiceSection = (props) => {
                 <div className="row justify-content-center">
                     <div className="col-lg-10">
                         <div className="wpo-section-title">
-                            <span>Department & Doctors</span>
-                            <h2>Find the best doctor or department
-                                for perfect treatment.</h2>
+                            <h2 style={{ color: 'black' }}>Consulta nuestros examenes medicos.</h2>
                         </div>
                     </div>
                 </div>
                 <div className="department-wrap">
-                    <form className="departmen-search" onSubmit={SubmitHandler}>
-                        <input className="search-doctor" type="text" placeholder="Search by department or doctors" />
-                        <button type="submit" className="submit-btn">Search Here</button>
-                    </form>
                     <div className="department-doctor-wrap">
                         <div className="row">
                             {Services.slice(0, 8).map((service, sitem) => (

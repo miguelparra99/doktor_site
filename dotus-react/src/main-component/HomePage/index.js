@@ -19,10 +19,7 @@ const HomePage = () => {
         <Fragment>
             <Navbar />
             <Hero />
-            <MarqueeSection />
             <ServiceSection />
-            <WhyChoose />
-            <TeamSection />
             <Testimonial />
             <BlogSection />
             <AppoinmentSec />

@@ -29,7 +29,7 @@ const Hero = () => {
         <section className="static-hero" id='div'>
             <div className="hero-container">
                 <div className="hero-inner">
-                    <div className="container">
+                    <div className="container" style={{ marginTop: "-200px" }}>
                         <div className="row align-items-center">
                             <div className="col-xl-7 col-lg-8 col-12">
                                 <div className="wpo-static-hero-inner">

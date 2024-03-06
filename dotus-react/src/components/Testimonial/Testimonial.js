@@ -47,16 +47,14 @@ const Testimonial = () => {
                 <div className="row align-items-center">
                     <div className="col-lg-3 col-12">
                         <div className="testimonial-left">
-                            <a href="testimonial.html" className="theme-btn">Testimonial</a>
+                            <a href="testimonial.html" className="theme-btn">Testimonios</a>
                             <div className="fun-fact-grids clearfix">
                                 <div className="grid">
                                     <div className="info">
                                         <h3>
-                                            <span className="odometer">6,000</span>
-                                            <i className="fa fa-plus" aria-hidden="true"></i>
+                                            <span className="odometer">Mas de 2000</span>
                                         </h3>
-                                        <p>Patient’s all around
-                                            the world.</p>
+                                        <p>Pacientes en todo el Ecuador.</p>
                                     </div>
                                 </div>
                             </div>
