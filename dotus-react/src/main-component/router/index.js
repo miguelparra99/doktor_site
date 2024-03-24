@@ -24,6 +24,7 @@ import BlogDetailsLeftSiide from '../BlogDetailsLeftSiide/BlogDetailsLeftSiide';
 import ContactPage from '../ContactPage/ContactPage';
 import AppoinmentPage from '../AppoinmentPage/AppoinmentPage';
 import ErrorPage from '../ErrorPage/ErrorPage';
+import StoresLocation from '../StoresLocation/StoresLocation';
 
 const AllRoute = () => {
 
@@ -56,6 +57,7 @@ const AllRoute = () => {
           <Route path='/wishlist' element={<WishlistPage />} />
           <Route path='/checkout' element={<CheckoutPage />} />
           <Route path='/order_received' element={<OrderRecived />} />
+          <Route path='/locations' element={<StoresLocation />} />
         </Routes>
       </BrowserRouter>
 
