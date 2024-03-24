@@ -27,12 +27,12 @@ const Header = (props) => {
                                     <MobileMenu />
                                 </div>
                             </div>
-                            <div className="col-lg-3 col-md-6 col-6">
+                            <div className="col-lg-2 col-md-6 col-6">
                                 <div className="navbar-header">
                                 <Link onClick={ClickHandler} className="navbar-brand" to="/"><img src={Logo} alt="Logo" style={{ width: '70px', height: 'auto' }} /></Link>
                                 </div>
                             </div>
-                            <div className="col-lg-6 col-md-1 col-1">
+                            <div className="col-lg-8 col-md-1 col-1">
                                 <div id="navbar" className="collapse navbar-collapse navigation-holder">
                                     <button className="menu-close"><i className="ti-close"></i></button>
                                     <ul className="nav navbar-nav mb-2 mb-lg-0">
@@ -57,12 +57,14 @@ const Header = (props) => {
                                                 <li><Link onClick={ClickHandler} to="/department-single/Dentisty">Department Single</Link></li>
                                             </ul>
                                         </li>
-                                        <li><Link onClick={ClickHandler} to="/contact">Nosotros</Link></li>
+
+                                        <li><Link onClick={ClickHandler} to="/locations">Sucursales</Link></li>
+                                        <li><Link onClick={ClickHandler} to="/contact">Contact</Link></li>
                                     </ul>
 
                                 </div>
                             </div>
-                            <div className="col-lg-3 col-md-2 col-2">
+                            <div className="col-lg-2 col-md-2 col-2">
                                 <div className="header-right">
                                     <div className="close-form">
                                         <Link onClick={ClickHandler} className="theme-btn" to="/appoinment">CONTACTANOS</Link>

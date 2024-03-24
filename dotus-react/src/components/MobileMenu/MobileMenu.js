@@ -148,6 +148,11 @@ const menus = [
         ]
     },
     {
+        id: 87,
+        title: 'Sucursales',
+        link: '/locations',
+    },
+    {
         id: 88,
         title: 'Contact',
         link: '/contact',
