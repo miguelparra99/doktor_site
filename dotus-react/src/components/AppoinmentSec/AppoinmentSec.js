@@ -17,9 +17,7 @@ const AppoinmentSec = () => {
                         <div className="col-xl-6 col-lg-12 col-12">
                             <div className="appoinment-text">
                                 <Link onClick={ClickHandler} to="/appoinment" className="appoinment-btn">Appoinment Now</Link>
-                                <h2>Appoinment
-                                    for free online
-                                    consultation.</h2>
+                                <h2 style={{ color: 'black' }}>Agenda tu cita ahora mismo.</h2>
                             </div>
                         </div>
                         <div className="col-xl-6 col-lg-12 col-12">

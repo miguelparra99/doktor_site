@@ -52,7 +52,7 @@ const AppoinmentFrom = () => {
                         className="form-control-name"
                         onBlur={(e) => changeHandler(e)}
                         onChange={(e) => changeHandler(e)}
-                        placeholder="Full Name" />
+                        placeholder="Nombre Completo" />
                     {validator.message('name', forms.name, 'required|alpha_space')}
                 </div>
                 <div className="form-field col-lg-6">
@@ -63,7 +63,7 @@ const AppoinmentFrom = () => {
                         name="email"
                         onBlur={(e) => changeHandler(e)}
                         onChange={(e) => changeHandler(e)}
-                        placeholder="Your Email" />
+                        placeholder="Email" />
                     {validator.message('email', forms.email, 'required|email')}
                 </div>
                 <div className="form-field col-lg-12">
@@ -76,7 +76,7 @@ const AppoinmentFrom = () => {
                                 className="form-controls form-control-number "
                                 onBlur={(e) => changeHandler(e)}
                                 onChange={(e) => changeHandler(e)}
-                                placeholder="Your phone" />
+                                placeholder="Telefono" />
                             {validator.message('phone', forms.phone, 'required|phone')}
                         </div>
                         <div className="col-lg-6">
@@ -88,7 +88,7 @@ const AppoinmentFrom = () => {
                                         value={forms.age}
                                         type="text"
                                         className="form-control valid"
-                                        name="age">
+                                        name="Edad">
                                         <option>22</option>
                                         <option>23</option>
                                         <option>24</option>
@@ -112,9 +112,9 @@ const AppoinmentFrom = () => {
                                         type="text"
                                         className="form-control valid"
                                         name="gender">
-                                        <option>Gender</option>
-                                        <option>Male</option>
-                                        <option>Female</option>
+                                        <option>Genero</option>
+                                        <option>Masculino</option>
+                                        <option>Femenino</option>
                                     </select>
                                     {validator.message('gender', forms.gender, 'required')}
                                 </div>
@@ -128,18 +128,18 @@ const AppoinmentFrom = () => {
                                 type="text"
                                 className="form-control valid"
                                 name="dept">
-                                <option disabled="disabled">Choose Department</option>
-                                <option>Biotechnology</option>
-                                <option>Facility Services & Supplies</option>
-                                <option>Government & Education</option>
-                                <option>Healthcare Providers</option>
-                                <option>Management Consulting</option>
+                                <option disabled="disabled">Escoje Departamento</option>
+                                <option>Biotecnologia</option>
+                                <option>Servicios y suministros</option>
+                                <option>gobierno y Educacion</option>
+                                <option>Proveedores de cuidados</option>
+                                <option>Manejo de consultoria</option>
                             </select>
                             {validator.message('Department', forms.dept, 'required')}
                         </div>
                         <div className="col-xl-12 col-lg-12 col-12">
                             <div className="submit-area">
-                                <button type="submit" className="theme-btn">Book Appoinment</button>
+                                <button type="submit" className="theme-btn">Agendar Cita</button>
                             </div>
                         </div>
                     </div>

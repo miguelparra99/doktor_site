@@ -44,7 +44,7 @@ import sIcon8 from '../images/department/8.png'
 const Services = [
     {
         id: '1',
-        title:'Neurology',
+        title:'Neurologia',
         slug:'Neurology',
         description:'Quis ipsome suspendisse ultrices gravid. Risus commod viverra maescums.',
         Icon:sIcon1,
@@ -54,7 +54,7 @@ const Services = [
     },
     {
         id: '2',
-        title:'Urology',
+        title:'Urologia',
         slug:'urology',
         description:'Quis ipsome suspendisse ultrices gravid. Risus commod viverra maescums.',
         Icon:sIcon2,
@@ -64,7 +64,7 @@ const Services = [
     },
     {
         id: '3',
-        title:'Allergy',
+        title:'Alergia',
         slug:'Allergy',
         description:'Quis ipsome suspendisse ultrices gravid. Risus commod viverra maescums.',
         Icon:sIcon3,
@@ -74,7 +74,7 @@ const Services = [
     },
     {
         id: '4',
-        title:'Gastrology',
+        title:'Gastrologia',
         slug:'Gastrology',
         description:'Quis ipsome suspendisse ultrices gravid. Risus commod viverra maescums.',
         Icon:sIcon4,
@@ -94,7 +94,7 @@ const Services = [
     },
     {
         id: '6',
-        title:'Dermatology',
+        title:'Dermatologia',
         slug:'Dermatology',
         description:'Quis ipsome suspendisse ultrices gravid. Risus commod viverra maescums.',
         Icon:sIcon6,
@@ -104,7 +104,7 @@ const Services = [
     },
     {
         id: '7',
-        title:'Otolaryngology',
+        title:'Otorrinolarinjologia',
         slug:'Otolaryngology',
         description:'Quis ipsome suspendisse ultrices gravid. Risus commod viverra maescums.',
         Icon:sIcon7,
@@ -114,7 +114,7 @@ const Services = [
     },
     {
         id: '8',
-        title:'Dentisty',
+        title:'Dentista',
         slug:'Dentisty',
         description:'Quis ipsome suspendisse ultrices gravid. Risus commod viverra maescums.',
         Icon:sIcon8,

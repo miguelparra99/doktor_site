@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import MobileMenu from '../MobileMenu/MobileMenu'
-import Logo from '../../images/logo.svg'
+import Logo from '../../images/logoc.svg'
 
 const Header = (props) => {
     const [menuActive, setMenuState] = useState(false);
@@ -29,7 +29,7 @@ const Header = (props) => {
                             </div>
                             <div className="col-lg-2 col-md-6 col-6">
                                 <div className="navbar-header">
-                                    <Link onClick={ClickHandler} className="navbar-brand" to="/"><img src={Logo}alt="" /></Link>
+                                <Link onClick={ClickHandler} className="navbar-brand" to="/"><img src={Logo} alt="Logo" style={{ width: '70px', height: 'auto' }} /></Link>
                                 </div>
                             </div>
                             <div className="col-lg-8 col-md-1 col-1">
@@ -37,59 +37,27 @@ const Header = (props) => {
                                     <button className="menu-close"><i className="ti-close"></i></button>
                                     <ul className="nav navbar-nav mb-2 mb-lg-0">
                                         <li className="menu-item-has-children">
-                                            <Link onClick={ClickHandler} to="/">Home</Link>
+                                            <Link onClick={ClickHandler} to="/">Inicio</Link>
                                             <ul className="sub-menu">
                                                 <li><Link onClick={ClickHandler} to="/home">Home Style 1</Link></li>
                                                 <li><Link onClick={ClickHandler} to="/home2">Home Style 2</Link></li>
                                             </ul>
-                                        </li>
+                                        </li>              
                                         <li className="menu-item-has-children">
-                                            <Link onClick={ClickHandler} to="/">Department</Link>
-                                            <ul className="sub-menu">
-                                                <li><Link onClick={ClickHandler} to="/department">Department</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/department-single/Dentisty">Department Single</Link></li>
-                                            </ul>
-                                        </li>
-                                        <li className="menu-item-has-children">
-                                            <Link onClick={ClickHandler} to="/">Services</Link>
+                                            <Link onClick={ClickHandler} to="/">Servicios</Link>
                                             <ul className="sub-menu">
                                                 <li><Link onClick={ClickHandler} to="/services">Services</Link></li>
                                                 <li><Link onClick={ClickHandler} to="/service-single/Dermatology">Service Single</Link></li>
                                             </ul>
                                         </li>
                                         <li className="menu-item-has-children">
-                                            <Link onClick={ClickHandler} to="/">Pages</Link>
+                                            <Link onClick={ClickHandler} to="/">Departamentos</Link>
                                             <ul className="sub-menu">
-                                                <li><Link onClick={ClickHandler} to="/about">About</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/team">Doctors</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/team-single/Dr-Raquel-Riley">Doctor Single</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/shop">Shop</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/product-single/Bp-Machine">Shop Single</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/cart">Cart</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/wishlist">Wishlist</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/checkout">Checkout</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/404">404 Error</Link></li>
+                                                <li><Link onClick={ClickHandler} to="/department">Department</Link></li>
+                                                <li><Link onClick={ClickHandler} to="/department-single/Dentisty">Department Single</Link></li>
                                             </ul>
                                         </li>
-                                        <li className="menu-item-has-children">
-                                            <Link onClick={ClickHandler} to="/">Blog</Link>
-                                            <ul className="sub-menu">
-                                                <li><Link onClick={ClickHandler} to="/blog">Blog Right Sidebar</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/blog-left-sidebar">Blog Left Sidebar</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/blog-fullwidth">Blog Fullwidth</Link></li>
-                                                <li className="menu-item-has-children">
-                                                    <Link onClick={ClickHandler} to="/">Blog Details</Link>
-                                                    <ul className="sub-menu">
-                                                        <li><Link onClick={ClickHandler} to="/blog-single/Using-Flow-Cytometry-in-Protein-Engineering-Detection">Blog Details Right Sidebar</Link>
-                                                        </li>
-                                                        <li><Link onClick={ClickHandler} to="/blog-single-left-sidebar/Using-Flow-Cytometry-in-Protein-Engineering-Detection">Blog Details Left
-                                                            Sidebar</Link></li>
-                                                        <li><Link onClick={ClickHandler} to="/blog-single-fullwidth/Using-Flow-Cytometry-in-Protein-Engineering-Detection">Blog Details
-                                                            Fullwidth</Link></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
+
                                         <li><Link onClick={ClickHandler} to="/locations">Sucursales</Link></li>
                                         <li><Link onClick={ClickHandler} to="/contact">Contact</Link></li>
                                     </ul>
@@ -99,7 +67,7 @@ const Header = (props) => {
                             <div className="col-lg-2 col-md-2 col-2">
                                 <div className="header-right">
                                     <div className="close-form">
-                                        <Link onClick={ClickHandler} className="theme-btn" to="/appoinment">COTIZAR</Link>
+                                        <Link onClick={ClickHandler} className="theme-btn" to="/appoinment">CONTACTANOS</Link>
                                     </div>
                                     <div className="header-search-form-wrapper">
                                         <div className="cart-search-contact">
