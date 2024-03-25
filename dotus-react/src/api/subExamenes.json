@@ -1,0 +1,17 @@
+{
+    "sanguineo":[
+        ["adn", 34],
+        ["plaquetas", 12.5],
+        ["globulos", 17.25]
+    ],
+    "comunes":[
+        ["azucar", 24],
+        ["colesterol", 32.25],
+        ["trigliceidos", 11.5]
+    ],
+    "extras":[
+        ["esteronle", 8],
+        ["rifplomin", 39.5],
+        ["cotralxtlio", 54]
+    ]
+}
