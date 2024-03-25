@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import SimpleReactValidator from 'simple-react-validator';
-
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
 
 const AppoinmentFrom = () => {
 
@@ -8,20 +9,28 @@ const AppoinmentFrom = () => {
         name: '',
         email: '',
         phone: '',
-        age: '',
-        gender: '',
-        dept: ''
+        company: '',
+        selectedDate: new Date()
     });
+
     const [validator] = useState(new SimpleReactValidator({
         className: 'errorMessage'
     }));
+
+    const [isSubmitted, setIsSubmitted] = useState(false);
+
     const changeHandler = e => {
-        setForms({ ...forms, [e.target.name]: e.target.value })
+        const { name, value } = e.target;
+        setForms({ ...forms, [name]: value });
         if (validator.allValid()) {
             validator.hideMessages();
         } else {
             validator.showMessages();
         }
+    };
+
+    const handleChange = date => {
+        setForms({ ...forms, selectedDate: date });
     };
 
     const submitHandler = e => {
@@ -32,15 +41,22 @@ const AppoinmentFrom = () => {
                 name: '',
                 email: '',
                 phone: '',
-                age: '',
-                gender: '',
-                dept: ''
-            })
+                company: ''
+            });
+            setIsSubmitted(true);
         } else {
             validator.showMessages();
         }
     };
 
+    if (isSubmitted) {
+        return (
+            <div className="submit-success-message">
+                <h2>Formulario enviado correctamente!</h2>
+                <p>Gracias por su solicitud de cita. Nos pondremos en contacto con usted en breve.</p>
+            </div>
+        );
+    }
     return (
         <form method="post" className="contact-validation-active" onSubmit={(e) => submitHandler(e)}>
             <div className="row">
@@ -63,12 +79,10 @@ const AppoinmentFrom = () => {
                         name="email"
                         onBlur={(e) => changeHandler(e)}
                         onChange={(e) => changeHandler(e)}
-                        placeholder="Email" />
+                        placeholder="Correo Electrónico" />
                     {validator.message('email', forms.email, 'required|email')}
                 </div>
-                <div className="form-field col-lg-12">
-                    <div className="row">
-                        <div className="col-lg-6">
+                <div className="form-field col-lg-6">
                             <input
                                 value={forms.phone}
                                 type="phone"
@@ -76,74 +90,23 @@ const AppoinmentFrom = () => {
                                 className="form-controls form-control-number "
                                 onBlur={(e) => changeHandler(e)}
                                 onChange={(e) => changeHandler(e)}
-                                placeholder="Telefono" />
+                                placeholder="Número de Teléfono" />
                             {validator.message('phone', forms.phone, 'required|phone')}
-                        </div>
-                        <div className="col-lg-6">
-                            <div className="row">
-                                <div className="form-control-age col-lg-6">
-                                    <select
-                                        onBlur={(e) => changeHandler(e)}
-                                        onChange={(e) => changeHandler(e)}
-                                        value={forms.age}
-                                        type="text"
-                                        className="form-control valid"
-                                        name="Edad">
-                                        <option>22</option>
-                                        <option>23</option>
-                                        <option>24</option>
-                                        <option>25</option>
-                                        <option>26</option>
-                                        <option>27</option>
-                                        <option>28</option>
-                                        <option>29</option>
-                                        <option>30</option>
-                                        <option>31</option>
-                                        <option>32</option>
-                                        <option>33</option>
-                                    </select>
-                                    {validator.message('age', forms.age, 'required')}
-                                </div>
-                                <div className="form-controls form-control-gender col-lg-6">
-                                    <select
-                                        onBlur={(e) => changeHandler(e)}
-                                        onChange={(e) => changeHandler(e)}
-                                        value={forms.gender}
-                                        type="text"
-                                        className="form-control valid"
-                                        name="gender">
-                                        <option>Genero</option>
-                                        <option>Masculino</option>
-                                        <option>Femenino</option>
-                                    </select>
-                                    {validator.message('gender', forms.gender, 'required')}
-                                </div>
-                            </div>
-                        </div>
-                        <div className="form-controls form-control-choose-department col-lg-12">
-                            <select
-                                onBlur={(e) => changeHandler(e)}
-                                onChange={(e) => changeHandler(e)}
-                                value={forms.dept}
-                                type="text"
-                                className="form-control valid"
-                                name="dept">
-                                <option disabled="disabled">Escoje Departamento</option>
-                                <option>Biotecnologia</option>
-                                <option>Servicios y suministros</option>
-                                <option>gobierno y Educacion</option>
-                                <option>Proveedores de cuidados</option>
-                                <option>Manejo de consultoria</option>
-                            </select>
-                            {validator.message('Department', forms.dept, 'required')}
-                        </div>
-                        <div className="col-xl-12 col-lg-12 col-12">
-                            <div className="submit-area">
-                                <button type="submit" className="theme-btn">Agendar Cita</button>
-                            </div>
+                </div>
+                <div className="form-field col-lg-6">
+                    <DatePicker
+                        selected={forms.selectedDate}
+                        onChange={handleChange}
+                        className="form-control-name"
+                        placeholderText="Selecciona una fecha"
+                    />
+                </div>   
+
+                    <div className="col-xl-12 col-lg-12 col-12">
+                        <div className="submit-area">
+                            <button type="submit" className="theme-btn">Agendar Cotización</button>
                         </div>
                     </div>
-                </div>
             </div>
         </form>
     )

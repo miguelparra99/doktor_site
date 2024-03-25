@@ -32,7 +32,7 @@ const ServiceSection = (props) => {
                                         <div className="department-single-img">
                                             <img src={service.Icon} alt="" />
                                         </div>
-                                        <span>{service.title}</span>
+                                        <span style={{ color: 'black' }} >{service.title}</span>
                                         <Link onClick={ClickHandler} to={`/service-single/${service.slug}`}>
                                             <i className="ti-arrow-right"></i>
                                         </Link>

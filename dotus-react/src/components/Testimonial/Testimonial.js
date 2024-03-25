@@ -47,7 +47,6 @@ const Testimonial = () => {
                 <div className="row align-items-center">
                     <div className="col-lg-3 col-12">
                         <div className="testimonial-left">
-                            <a href="testimonial.html" className="theme-btn">Testimonios</a>
                             <div className="fun-fact-grids clearfix">
                                 <div className="grid">
                                     <div className="info">

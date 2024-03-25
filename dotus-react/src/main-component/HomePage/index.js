@@ -6,7 +6,6 @@ import ServiceSection from '../../components/ServiceSection/ServiceSection';
 import WhyChoose from '../../components/WhyChoose/WhyChoose';
 import TeamSection from '../../components/TeamSection/TeamSection';
 import Testimonial from '../../components/Testimonial/Testimonial';
-import BlogSection from '../../components/BlogSection/BlogSection';
 import AppoinmentSec from '../../components/AppoinmentSec/AppoinmentSec';
 import Footer from '../../components/footer/Footer';
 import Scrollbar from '../../components/scrollbar/scrollbar'
@@ -21,9 +20,12 @@ const HomePage = () => {
             <Hero />
             <ServiceSection />
             <Testimonial />
-            <BlogSection />
-            <AppoinmentSec />
-            <Footer />
+            <div style={{ marginTop: '250px' }}>
+                <AppoinmentSec />
+            </div>
+            <div style={{ marginTop: '200px' }}>
+                <Footer />
+            </div>
             <Scrollbar />
         </Fragment>
     )

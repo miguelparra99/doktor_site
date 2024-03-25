@@ -38,28 +38,16 @@ const Header = (props) => {
                                     <ul className="nav navbar-nav mb-2 mb-lg-0">
                                         <li className="menu-item-has-children">
                                             <Link onClick={ClickHandler} to="/">Inicio</Link>
-                                            <ul className="sub-menu">
-                                                <li><Link onClick={ClickHandler} to="/home">Home Style 1</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/home2">Home Style 2</Link></li>
-                                            </ul>
                                         </li>              
                                         <li className="menu-item-has-children">
                                             <Link onClick={ClickHandler} to="/">Servicios</Link>
                                             <ul className="sub-menu">
-                                                <li><Link onClick={ClickHandler} to="/services">Services</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/service-single/Dermatology">Service Single</Link></li>
+                                                <li><Link onClick={ClickHandler} to="/home">Revisa tus resultados</Link></li>
+                                                <li><Link onClick={ClickHandler} to="/home2">Cotiza tus pruebas</Link></li>
                                             </ul>
                                         </li>
-                                        <li className="menu-item-has-children">
-                                            <Link onClick={ClickHandler} to="/">Departamentos</Link>
-                                            <ul className="sub-menu">
-                                                <li><Link onClick={ClickHandler} to="/department">Department</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/department-single/Dentisty">Department Single</Link></li>
-                                            </ul>
-                                        </li>
-
                                         <li><Link onClick={ClickHandler} to="/locations">Sucursales</Link></li>
-                                        <li><Link onClick={ClickHandler} to="/contact">Contact</Link></li>
+                                        <li><Link onClick={ClickHandler} to="/contact">Nosotros</Link></li>
                                     </ul>
 
                                 </div>
@@ -67,7 +55,7 @@ const Header = (props) => {
                             <div className="col-lg-2 col-md-2 col-2">
                                 <div className="header-right">
                                     <div className="close-form">
-                                        <Link onClick={ClickHandler} className="theme-btn" to="/appoinment">CONTACTANOS</Link>
+                                        <Link onClick={ClickHandler} className="theme-btn" to="/appoinment">AGENDAR</Link>
                                     </div>
                                     <div className="header-search-form-wrapper">
                                         <div className="cart-search-contact">
